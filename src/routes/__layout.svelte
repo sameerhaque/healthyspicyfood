@@ -1,16 +1,20 @@
  <svelte:head>  
   <script>
     var cb = function() {
-    var l = document.createElement('link'); l.rel = 'stylesheet';
-    l.href = '../assets/css/bootstrap.css';
-    var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h); };
+      var l = document.createElement('link');
+      l.rel = 'stylesheet';
+      l.href = '../assets/css/tastebite-styles.css';
+      var h = document.getElementsByTagName('head')[0];
+      h.parentNode.insertBefore(l, h);
+    };
     var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-              webkitRequestAnimationFrame || msRequestAnimationFrame;
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
     if (raf) raf(cb);
     else window.addEventListener('load', cb);
+ 
   </script>
 
-	<link href="../assets/css/tastebite-styles.css" rel="stylesheet" type="text/css" media="all">
+	<link href="" rel="stylesheet" type="text/css" media="all">
 </svelte:head>
 
 <div class="container">
